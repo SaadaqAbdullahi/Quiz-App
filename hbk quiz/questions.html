@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beat The Clock!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="timer">
+      <a href="./highscores.html" class="btn" id="highscore-btn"
+        >View High Scores</a
+      >
+      <p id="timer_secs"></p>
+    </div>
+    <div class="container">
+      <div id="home" class="flex-column flex-center">
+        <h2 id="question"></h2>
+        <p class="choices" data-number="1"></p>
+        <p class="choices" data-number="2"></p>
+        <p class="choices" data-number="3"></p>
+        <p class="choices" data-number="4"></p>
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="./questions.js"></script>
+  </body>
+</html>

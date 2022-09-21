@@ -1,0 +1,116 @@
+body {
+    background-color: #532C2A;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: fantasy;
+}
+h1 {
+    font-size: 6.4rem;
+    color: white;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+h2 {
+    font-size: 4.2rem;
+    color: white;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+p {
+    font-size: 1.9rem;
+    color: white;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.btn, .choices, #user-initials{
+    font-size: 2rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #6E3330 0%, #995754 100%);
+    border-radius: 4px;
+}
+.btn:hover, .choices:hover, #user-initials:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #A24E49 0%, #CB837F 100%);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+#highscore-btn:hover {
+    background: linear-gradient(90deg, #8B8C1E 0%, #70712F 100%);
+}
+.choices {
+    width: 30rem;
+}
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #532C2A;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+#timer_secs {
+    font-size: 4rem;
+    font-family: Orbitron;
+    margin-top: 2rem;
+}
+#result {
+    padding: 2rem 0;
+}
+#user-initials {
+    margin-top: 2rem;
+}
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 red;
+    font-family: 'Courier New', Courier, monospace;
+}
+input::placeholder{
+    color: #aaa;
+}
+#initials {
+    margin-bottom: 3rem;
+    width: 50%;
+    outline: none;
+}
+#all-highscores {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+
